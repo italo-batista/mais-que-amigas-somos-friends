@@ -15,4 +15,5 @@ network_nodes = read.csv('dados/network_nodes.csv')
 forceNetwork(Links = network_links, Nodes = network_nodes,
              Source = "source", Target = "target",
              Value = "value", NodeID = "name",
-             Group = "group", opacity = 0.8)
+             Group = "group", opacity = 2,  zoom = TRUE,
+             fontSize = 12)
